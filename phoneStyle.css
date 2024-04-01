@@ -1,0 +1,447 @@
+
+
+/*------------------------PHONE-----------------------------------*/
+@media screen and (max-width: 768px) {
+    * {
+        font-family: sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        scroll-behavior: smooth;
+        color: white;    
+    }
+    
+    body{
+        background-color: black;
+    }
+    
+    #pageAbout, #pageInstructor, #pageCursos, #pageApoiadores, #pageContact{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+        
+    
+    /*------------------------CABEÇALHO-----------------------------------*/
+    header{
+        box-shadow: 0 5px 0px #FF6100;
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 9vh;
+        z-index: 14;
+    }
+    
+    #cabecalho{
+        background-color: black;
+        width: 103vw;
+        height: 9vh;
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Alinha elementos à esquerda e à direita */
+    }
+    
+    #logo{
+        width: 50%;
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+    }
+    
+    #logoVertical{
+        height: 7vh;
+    }
+    
+    /*------------------------CAPA-----------------------------------*/
+    #capa{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content:flex-end; /* Alinha elementos à direita */
+        margin-top: -9vh;
+    }
+    
+    #gradient-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 101vh;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Gradiente de opacidade */
+        z-index: 3;
+    }
+    
+    /*------------------------SOBRE-----------------------------------*/
+    #pageAbout{
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza verticalmente */
+        height: 100%;  
+        padding-bottom: 3em;   
+    }
+    
+    #nossahistoria{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #company{
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: space-between; /* Centraliza horizontalmente */
+        flex-direction: column;
+        gap: 5vh;
+    }
+    
+    .companyInfos{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+    
+    
+    
+    /*------------------------Instrutores-----------------------------------*/
+    #pageInstructor{
+        height: 100%;
+        display: flex;
+        width: auto;
+        padding-bottom: 2em;  
+    }
+    
+    .frameInstrutor{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+    
+    .instrutor{
+        gap: 4vh;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4em;
+    }
+    
+    #instrutores{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+    /*------------------------CURSOS-----------------------------------*/
+    #pageCursos{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3em;  
+    }
+    
+    #divCursos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5em;
+    }
+    
+    .divCursos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+    }
+    
+    .cursos{
+        background-color: rgba(217, 217, 217, 0.4);
+        width: 80vw;
+        height: auto;
+        border-radius: 2vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 1vh;
+    }
+    
+    
+    .buttonTextDecoration{
+        text-decoration: none;
+    }
+    
+    .button{
+        background-color: #FF6100;
+        border: none;
+        height: 4vh;
+        width: 15vh;
+        border-radius: 1vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: 2vh;
+    }
+    
+    /* Estilo para quando o mouse estiver sobre o botão */
+    .button:hover {
+        background-color: #ea8342;
+        transform: scale(1.05); /* Aumenta o tamanho em 5% */
+    }
+    
+    /* Estilo para quando o botão for clicado */
+    .button:active {
+        background-color: #FF6100;
+    }
+    
+    
+    
+    /*------------------------APOIADORES-----------------------------------*/
+    #pageApoiadores{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .empresas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    
+    /*------------------------CONTATO-----------------------------------*/
+    #pageContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 8%;
+        gap: 1vh;
+        height: 100%;
+        margin-top: -20%;
+    }
+    
+    #frameContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    
+    #infosContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        gap: 5vh;
+    }
+    
+    .contatos{
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1vh;
+    }
+    
+    #divContact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;    
+    }
+    
+    .info{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+    }
+    
+    /*---------CAPA---------*/
+    #text-cover {
+        position: absolute; /* Define a posição absoluta para o texto */
+        top: 50%; /* Alinha o topo do texto ao centro da seção pai */
+        left: 50%; /* Alinha a esquerda do texto ao centro da seção pai */
+        transform: translate(-50%, -50%); /* Centraliza verticalmente e horizontalmente */
+        z-index: 4; /* Coloca o texto acima da imagem */
+        text-align: center;
+        font-size: 130%;
+    }
+
+    /*---------NOSSA HISTÓRIA---------*/
+    .title{
+        color: #FF6100;
+        font-size: 220%;
+        padding-bottom: 0.8em;
+    }
+
+    .text{
+        font-size: 130%;
+        text-align: justify;
+        text-indent: 7%;
+        padding-bottom: 5vh;
+        padding-right: 1vh;
+        padding-left: 1vh;
+    }
+
+    .textCompany{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    /*---------INSTRUTORES---------*/
+    .nameInstrutor{
+        font-size: 2em;
+        padding-bottom: 2vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .textInstrutor{
+        font-size: 100%;
+        text-align: justify;
+        padding-bottom: 1vh;
+        padding-right: 1vh;
+        padding-left: 1vh;
+    }
+
+
+    .textInstrutor2{
+        font-size: 140%;
+        text-align: justify;
+        padding-bottom: 2vh;
+        padding-right: 1vh;
+        padding-left: 1vh;
+    }
+
+    /*---------CURSOS---------*/
+    .nameCourse{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: 1em;
+        height: 10%;
+    }
+
+    .textCourses{
+        font-size: 110%;
+    }
+
+
+
+    /*---------APOIADORES---------*/
+    .textApoiadores{
+        font-size: 100%;
+        text-align: center;
+    }
+
+
+    /*---------CONTATOS---------*/
+    .titleContact{
+        font-size: 2em;
+        color: #FF6100;
+        text-align: center;
+    }
+
+    .textVertical{
+        font-size: 1em;
+    }
+
+    #end{
+        text-align: center;
+        color: FFFFFF;
+        opacity: 50%;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*------------------------IMAGENS-----------------------------------*/
+    .imgCompany{
+        width: 70%;
+        border-radius: 3%;
+    }
+
+    .imgInstrutor, #imgcursos{
+        width: 100%;
+        height: auto;
+        border-radius: 3%;
+    }
+
+    #imgVertical2{
+        width: 80%;
+        border-radius: 3%;
+
+    }
+
+    .imgVertical{
+        width: 70%;
+        height: auto;
+        visibility: visible;
+    }
+
+    .imgPhone{
+        height: 5vh;
+        width: 5vh;
+    }
+
+    #cover {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    #imgCaetanoPhone, .imgPatrocinadoresPhone{
+        visibility: visible;
+        width: auto;
+
+    }
+
+    #imgCaetano, .imgPatrocinadores{
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    
+    
+
+    /*------------------------ONLY COMPUTER-----------------------------------*/
+    .imageClass1{
+        visibility: hidden;
+        height: 0px;
+        padding-bottom: 10vh;
+    }
+
+    #content, #redes{
+        visibility: hidden;
+        width: 0%;
+    }
+
+
+    /*------------------------ANIMAÇÕES-----------------------------------*/
+ 
+
+
+
+}

@@ -1,0 +1,311 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+body{background-color: black;}
+
+#pageAbout, #pageInstructor, #pageCursos, #pageApoiadores, #pageContact{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/*------------------------HIDE-----------------------------------*/
+
+
+
+
+/*------------------------CABEÇALHO-----------------------------------*/
+header{
+    box-shadow: 0 5px 0px #FF6100;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 9vh;
+    z-index: 6;
+}
+
+#cabecalho{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Alinha elementos à esquerda e à direita */
+}
+
+#logo{
+    width: 20%;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+#logoVertical{
+    height: 7vh;
+}
+
+#content{
+    width: 76%;
+}
+
+#links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7vh;
+}
+
+#redes{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 20%;
+    height: 100%;
+    gap: 5vh;
+}
+
+#links{
+    list-style: none;
+}
+
+.nav-item:hover {
+    color: #FF6100;
+}
+
+
+/*------------------------CAPA-----------------------------------*/
+#capa{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content:flex-end; /* Alinha elementos à direita */
+    margin-top: -9vh;
+}
+
+#gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Gradiente de opacidade */
+    z-index: 3;
+}
+
+
+
+/*------------------------SOBRE-----------------------------------*/
+#pageAbout{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%;
+    padding-bottom: 10%;
+    gap: 3em;  
+}
+
+#nossahistoria{
+    display: flex;
+    flex-direction: column;
+}
+
+#company{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Centraliza horizontalmente */
+}
+
+.companyInfos{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+
+
+
+/*------------------------Instrutores-----------------------------------*/
+#pageInstructor{
+    height: 100%;
+    display: flex;
+    width: auto;
+    padding-bottom: 2em;  
+}
+
+.frameInstrutor{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+}
+
+.instrutor{
+    gap: 4vh;
+    display: flex;
+    padding-bottom: 4em;
+}
+
+#instrutores{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*------------------------CURSOS-----------------------------------*/
+#pageCursos{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;  
+}
+
+#divCursos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10em;
+}
+
+.divCursos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10em;
+    padding-right: 30vh;
+    padding-left: 30vh;
+}
+
+.cursos{
+    background-color: rgba(217, 217, 217, 0.4);
+    height: auto;
+    width: auto;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+
+.buttonTextDecoration{
+    text-decoration: none;
+}
+
+.button{
+    background-color: #FF6100;
+    border: none;
+    height: 4vh;
+    width: 15vh;
+    border-radius: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 2vh;
+}
+
+
+/* Estilo para quando o mouse estiver sobre o botão */
+.button:hover {
+    background-color: #ea8342;
+    transform: scale(1.05); /* Aumenta o tamanho em 5% */
+}
+
+/* Estilo para quando o botão for clicado */
+.button:active {
+    background-color: #FF6100;
+}
+
+
+
+/*------------------------APOIADORES-----------------------------------*/
+#pageApoiadores{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;  
+}
+
+.empresas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+
+
+/*------------------------CONTATO-----------------------------------*/
+#pageContact{
+    display: flex;
+    flex-direction: column;    
+}
+
+#infosContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 5vh;
+}
+
+.contatos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1vh;
+}
+
+#divContact{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+#frameContact{
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 5%;
+
+}
+
+
+#pageInstructor, .cursos{
+    visibility: hidden;
+}

@@ -1,0 +1,107 @@
+/*---------CAPA---------*/
+#text-cover {
+    position: absolute; /* Define a posição absoluta para o texto */
+    top: 50%; /* Alinha o topo do texto ao centro da seção pai */
+    left: 50%; /* Alinha a esquerda do texto ao centro da seção pai */
+    transform: translate(-50%, -50%); /* Centraliza verticalmente e horizontalmente */
+    z-index: 4; /* Coloca o texto acima da imagem */
+    text-align: center;
+    font-size: 130%;
+}
+
+.nav-item {
+    list-style-type: none;
+    font-size: 3vh;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+/*---------NOSSA HISTÓRIA---------*/
+.title{
+    color: #FF6100;
+    font-size: 3.5em;
+    padding-bottom: 0.8em;
+}
+
+.text{
+    font-size: 130%;
+    text-align: justify;
+    text-indent: 7%;
+    padding-bottom: 5vh;
+    padding-right: 1vh;
+    padding-left: 1vh;
+}
+
+.textCompany{
+    font-size: 1em;
+    text-align: center;
+}
+
+/*---------INSTRUTORES---------*/
+.nameInstrutor{
+    font-size: 3em;
+    padding-bottom: 1vh;
+}
+
+.textInstrutor{
+    font-size: 130%;
+    text-align: justify;
+    padding-bottom: 1vh;
+    padding-right: 1vh;
+    padding-left: 1vh;
+}
+
+
+.textInstrutor2{
+    font-size: 140%;
+    text-align: justify;
+    padding-bottom: 2vh;
+    padding-right: 1vh;
+    padding-left: 1vh;
+}
+
+
+
+
+/*---------CURSOS---------*/
+.titleCurse{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 1em;
+    height: 10%;
+}
+
+.textCursos{
+    font-size: 110%;
+}
+
+
+
+/*---------APOIADORES---------*/
+.textApoiadores{
+    font-size: 100%;
+    text-align: center;
+}
+
+
+/*---------CONTATOS---------*/
+.titleContact{
+    font-size: 2em;
+    color: #FF6100;
+    text-align: center;
+}
+
+.textVertical{
+    font-size: 1.5em;
+}
+
+#end{
+    text-align: center;
+    color: FFFFFF;
+    opacity: 50%;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
